@@ -1,0 +1,16 @@
+{
+  "version": "2.3.0",
+  "summary": {
+    "title": "Threat Model - Vault",
+    "owner": "mrzanonjrr",
+    "description": "Sistema WEB de cofre de senhas desenvolvido utilizando a metodologia de SSDLC.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
