@@ -16,11 +16,1120 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.3.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": -930,
+              "y": -310
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9c104609-8b7b-4b7f-80f8-4b04e0d56e4e"
+                },
+                {
+                  "group": "right",
+                  "id": "7aa5b96f-2958-4299-ab4a-6bdf3cdacbfb"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fb23ff68-7310-4095-9d8d-5f9c13d73247"
+                },
+                {
+                  "group": "left",
+                  "id": "d31a358c-7711-4305-b92d-f754d462628b"
+                }
+              ]
+            },
+            "id": "f4a540a7-5193-418b-9480-6e613cb60f96",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Ator",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Limite de Confiança"
+                  }
+                }
+              }
+            ],
+            "id": "01fe7231-b361-4f97-a8be-edb372e19023",
+            "source": {
+              "x": -720,
+              "y": -360
+            },
+            "target": {
+              "x": -720,
+              "y": -200
+            },
+            "vertices": [
+              {
+                "x": -720,
+                "y": -120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "8a8b1a00-d1d2-46af-9937-08120166fbe7",
+            "source": {
+              "cell": "f4a540a7-5193-418b-9480-6e613cb60f96"
+            },
+            "target": {
+              "cell": "b5cbcad9-e0b2-45f6-8e54-858c6502d3ee"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "a188bf5a-2d45-44c9-816c-83038ce6a491",
+            "source": {
+              "cell": "b5cbcad9-e0b2-45f6-8e54-858c6502d3ee"
+            },
+            "target": {
+              "cell": "34f41d50-27c5-4ae9-b9cc-b007356a7914"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "3b7dcacf-c72d-4d1e-bb86-db01d8fad7b5",
+            "source": {
+              "cell": "34f41d50-27c5-4ae9-b9cc-b007356a7914"
+            },
+            "target": {
+              "cell": "90366ea9-c568-4f2f-83bf-d07152603a2d"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "7d3fcb0d-6eeb-425f-95dc-a192eb124a04",
+            "source": {
+              "cell": "90366ea9-c568-4f2f-83bf-d07152603a2d"
+            },
+            "target": {
+              "cell": "dcfe37b9-f01f-4fb8-b7b4-b4a845f8e765"
+            }
+          },
+          {
+            "position": {
+              "x": -623,
+              "y": -320
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Web Server"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34d6d9f0-765d-4b18-bb7e-f9998d9aca23"
+                },
+                {
+                  "group": "right",
+                  "id": "001d1ebd-0537-4794-9fcd-b6268faa32aa"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7ad1d5d9-0f53-41a6-ba1d-1c67dcc8cbff"
+                },
+                {
+                  "group": "left",
+                  "id": "2aabbed4-2c05-409d-99c1-ad90d8ebc463"
+                }
+              ]
+            },
+            "id": "b5cbcad9-e0b2-45f6-8e54-858c6502d3ee",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Web Server",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "c04d3c8a-5a1b-447f-9818-cd3b727ef28b",
+                  "title": "Spoofing (Falsificação de Identidade)",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Ameaça: Usuários maliciosos falsificando credenciais para se passar por outros usuários.",
+                  "mitigation": "- Implementar autenticação baseada em JWT com assinatura para validar sessões de usuários. (DONE)\n- Configurar mecanismos de proteção contra força bruta, como bloqueio temporário após várias tentativas de login (Rate Limit e Captcha) (OPEN: Falta implementar Captcha na tela de login e na futura tela de recuperar senha).\n?? - Adicionar duplo fator de autenticação no login \"MFA\" - (DONE). ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "a1047b52-84eb-432b-a472-3a5ecc05e146",
+                  "title": "Tampering (Manipulação de Dados)",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Modificação de dados em formulários enviados para o servidor.",
+                  "mitigation": "Adicionar sanitização e validação de entrada no front-end. (DONE)\nGarantir que toda validação crítica também seja realizada no back-end. (OPEN: Na criação do usuário falta validar o email se está no formato e validar a força da senha)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "3a5c23b6-45d6-4eec-973d-36db7cb8d29c",
+                  "title": "Information Disclosure (Divulgação de Informações)",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Exposição de informações sensíveis (stack traces) em mensagens de erro exibidas no navegador.",
+                  "mitigation": "- Exibir mensagens genéricas ao usuário e logar informações detalhadas apenas no servidor. (DONE)\n- Configurar políticas de CSP para evitar vazamento de dados via scripts externos. (OPEN: Configurar regras de CSP)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "38f0d5b8-58d3-4076-88b2-f42eb36f8388",
+                  "title": "Denial of Service (Negação de Serviço)",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Denial of service",
+                  "description": "Scripts maliciosos que sobrecarregam o front-end ou o servidor.",
+                  "mitigation": "- Limitar o número de requisições enviadas pelo front-end para o servidor (debounce em formulários). (OPEN: Verificar e entender)\n- Implementar rate limiting no servidor. (DONE)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "e2eeabe9-2ada-4972-a9b6-caaabc26b89b",
+                  "title": "Elevation of Privilege (Elevação de Privilégios)",
+                  "status": "Mitigated",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege",
+                  "description": "Usuários acessando funcionalidades do front-end que deveriam estar restritas.",
+                  "mitigation": "- Controlar permissões no back-end, garantindo que funcionalidades sensíveis sejam validadas também no servidor. (DONE);\n- Esconder elementos da interface apenas com base em permissões válidas no token JWT. (DONE);",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 5,
+                "tampering": 3,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 2,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": -441,
+              "y": -320
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Proxy"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34d6d9f0-765d-4b18-bb7e-f9998d9aca23"
+                },
+                {
+                  "group": "right",
+                  "id": "001d1ebd-0537-4794-9fcd-b6268faa32aa"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7ad1d5d9-0f53-41a6-ba1d-1c67dcc8cbff"
+                },
+                {
+                  "group": "left",
+                  "id": "2aabbed4-2c05-409d-99c1-ad90d8ebc463"
+                }
+              ]
+            },
+            "id": "34f41d50-27c5-4ae9-b9cc-b007356a7914",
+            "data": {
+              "type": "tm.Process",
+              "name": "Proxy",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "87490898-22b6-484b-9a59-500ef9fb1cf6",
+                  "title": "Falsificação de origem nas requisições enviadas ao NGINX.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Spoofing",
+                  "description": "Falsificação de origem nas requisições enviadas ao NGINX.",
+                  "mitigation": "- Configurar o NGINX para aceitar apenas requisições provenientes de domínios confiáveis. (OPEN)\n- Implementar mutual TLS entre cliente e servidor, quando aplicável.(OPEN: Verificar)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "addc1454-5846-4800-9c5f-ffc431a9ac64",
+                  "title": "Interceptação e modificação de dados em trânsito.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "Interceptação e modificação de dados em trânsito.",
+                  "mitigation": "- Configurar HTTPS com certificados SSL/TLS válidos. (OPEN: Falta configurar o certificado do lado do NGINX);\n- Forçar a utilização de conexões seguras redirecionando HTTP para HTTPS. (DONE)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "762d3121-24fc-4a89-9066-d64172b5dd77",
+                  "title": "Exposição de cabeçalhos sensíveis ou informações sobre o servidor.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Exposição de cabeçalhos sensíveis ou informações sobre o servidor.",
+                  "mitigation": "- Remover cabeçalhos padrão como Server e X-Powered-By. (OPEN)\n- Configurar cabeçalhos de segurança como X-Content-Type-Options e X-Frame-Options. (DONE)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "1e4d28cf-cfbd-44bb-a0dc-f16e6958a891",
+                  "title": "Ataques de DoS/DDoS contra o NGINX.",
+                  "status": "Mitigated",
+                  "severity": "TBA",
+                  "type": "Repudiation",
+                  "description": "Ataques de DoS/DDoS contra o NGINX.",
+                  "mitigation": "- Usar um Web Application Firewall (WAF) como o da Cloudflare para filtrar tráfego malicioso. (DONE)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "1cf0d99d-c267-4719-9f64-ab6466f86a12",
+                  "title": "Configuração incorreta permitindo acesso administrativo por usuários não autorizados.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege",
+                  "description": "Configuração incorreta permitindo acesso administrativo por usuários não autorizados.",
+                  "mitigation": "Garantir que apenas administradores autenticados possam acessar as configurações do NGINX. (DONE: Acesso ao servidor via chave SSH com configuração de IP?)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 3,
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            },
+            "zIndex": 12
+          },
+          {
+            "position": {
+              "x": -259,
+              "y": -320
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Server"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34d6d9f0-765d-4b18-bb7e-f9998d9aca23"
+                },
+                {
+                  "group": "right",
+                  "id": "001d1ebd-0537-4794-9fcd-b6268faa32aa"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7ad1d5d9-0f53-41a6-ba1d-1c67dcc8cbff"
+                },
+                {
+                  "group": "left",
+                  "id": "2aabbed4-2c05-409d-99c1-ad90d8ebc463"
+                }
+              ]
+            },
+            "id": "90366ea9-c568-4f2f-83bf-d07152603a2d",
+            "data": {
+              "type": "tm.Process",
+              "name": "Server",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "941db4f0-c403-4085-8cef-ba54f23f1889",
+                  "title": "Falsificação de tokens de autenticação para acessar o sistema como outro usuário.",
+                  "status": "Mitigated",
+                  "severity": "TBA",
+                  "type": "Spoofing",
+                  "description": "Falsificação de tokens de autenticação para acessar o sistema como outro usuário.",
+                  "mitigation": "- Validar tokens JWT com chave secreta ou par de chaves pública/privada. (DONE).\n- Garantir que os tokens sejam assinados com algoritmos seguros (RS256). (DONE).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "cfb6eda2-b25a-43f4-83e8-c7810f71a458",
+                  "title": "Manipulação de dados de entrada, como parâmetros enviados pelo cliente.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "Manipulação de dados de entrada, como parâmetros enviados pelo cliente.",
+                  "mitigation": "- Sanitizar e validar todas as entradas no back-end com Hibernate Validator. (VERIFICAR?)\n- Utilizar consultas parametrizadas para evitar injeção de SQL. (DONE)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "7deb77ef-6e12-4622-8500-7f50dcd9b992",
+                  "title": "Negação de ações realizadas no servidor.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Repudiation",
+                  "description": "Negação de ações realizadas no servidor.",
+                  "mitigation": "Registrar logs detalhados no servidor para cada ação crítica, incluindo o usuário, IP, e timestamp. (OPEN);",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "21bb8d0b-cd54-4d06-905a-63805ef323f7",
+                  "title": "Exposição de dados sensíveis, como senhas e logs com informações confidenciais.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Exposição de dados sensíveis, como senhas e logs com informações confidenciais.",
+                  "mitigation": "- Armazenar senhas utilizando bcrypt com salt. (DONE)\n- Configurar logs para evitar o registro de dados sensíveis. (OPEN)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "fe60ae4e-9291-41a1-8547-f6b99529bade",
+                  "title": "Sobrecarga do servidor com requisições excessivas.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Denial of service",
+                  "description": "Sobrecarga do servidor com requisições excessivas.",
+                  "mitigation": "- Configurar pool de conexões limitadas no Spring para gerenciar recursos do banco de dados. (OPEN)\n- Implementar rate limiting e proteção contra DoS no servidor. (DONE)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "37b7e64d-768d-452a-8c4a-3610670413aa",
+                  "title": "Usuários não autorizados executando ações administrativas.",
+                  "status": "Mitigated",
+                  "severity": "TBA",
+                  "type": "Elevation of privilege",
+                  "description": "Usuários não autorizados executando ações administrativas.",
+                  "mitigation": "- Configurar permissões no Spring Security para validar o papel do usuário em cada endpoint. (DONE)\n- Realizar validação de permissões em operações críticas. (DONE)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
+            },
+            "zIndex": 13
+          },
+          {
+            "position": {
+              "x": -103,
+              "y": -310
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "DataBase"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "37875cce-8615-48b3-a128-85f9a36f640d"
+                },
+                {
+                  "group": "right",
+                  "id": "6c54e9ba-5366-4f22-aa54-6109b3651621"
+                },
+                {
+                  "group": "bottom",
+                  "id": "636c359b-96db-4755-abc5-8b72443818e7"
+                },
+                {
+                  "group": "left",
+                  "id": "9f840967-5f4d-4fff-9e69-2671c6236d0b"
+                }
+              ]
+            },
+            "id": "dcfe37b9-f01f-4fb8-b7b4-b4a845f8e765",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Store",
+              "name": "DataBase",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "6abf1c13-c5d7-42b2-8ca4-91f6414a420a",
+                  "title": "Acessos não autorizados diretamente ao banco de dados.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "Acessos não autorizados diretamente ao banco de dados.",
+                  "mitigation": "- Restringir acessos ao banco apenas ao servidor back-end, configurando regras de firewall.\n- Usar autenticação com credenciais fortes e armazenadas em um cofre de segredos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                },
+                {
+                  "id": "27798a17-bd77-411c-8ce6-acbc12286eed",
+                  "title": "Modificação de dados sensíveis por usuários ou processos maliciosos.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "Modificação de dados sensíveis por usuários ou processos maliciosos.",
+                  "mitigation": "Configurar permissões de leitura/escrita no banco de dados com base no princípio do menor privilégio.\nImplementar auditoria de alterações no banco.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "08125b7b-dcd2-4fe0-a7ca-efea29ca18b1",
+                  "title": "Modificações no banco sem rastreamento das ações.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Repudiation",
+                  "description": "Modificações no banco sem rastreamento das ações.",
+                  "mitigation": "Ativar logs de auditoria no PostgreSQL para registrar todas as alterações.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                },
+                {
+                  "id": "59e7e3dc-92f1-4f90-8885-8368c57e9ca3",
+                  "title": "Vazamento de informações sensíveis por consultas SQL.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Vazamento de informações sensíveis por consultas SQL.",
+                  "mitigation": "- Criptografar dados sensíveis no banco (e.g., AES para informações confidenciais). (DONE)\n- Configurar o banco para rejeitar consultas que não sejam parametrizadas. (OPEN)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                },
+                {
+                  "id": "51dc0a87-cb2e-4e17-9015-1f96cdf8ae63",
+                  "title": "Sobrecarga do banco devido a consultas pesadas ou excessivas.",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Configurar limites de conexões simultâneas no banco.\nMonitorar desempenho com ferramentas como pg_stat_statements.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 23
   }
 }
