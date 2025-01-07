@@ -121,8 +121,8 @@
             "id": "f4a540a7-5193-418b-9480-6e613cb60f96",
             "data": {
               "type": "tm.Actor",
-              "name": "Ator",
-              "description": "",
+              "name": "Actor",
+              "description": "Usuário do sistema",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -445,7 +445,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Web Server",
-              "description": "",
+              "description": "Servidor Web que foi desenvolvido em VueJS3",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -638,7 +638,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Proxy",
-              "description": "",
+              "description": "Proxy reverso utilizado a ferramenta NGINX com as configurações de segurança aplicadas",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -831,7 +831,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Server",
-              "description": "",
+              "description": "Servidor Back-end desenvolvido em Java utilizando SpringBoot",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
