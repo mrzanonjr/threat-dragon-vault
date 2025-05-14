@@ -1,5 +1,5 @@
 {
-  "version": "2.3.0",
+  "version": "2.4.1",
   "summary": {
     "title": "Threat Model - Vault",
     "owner": "mrzanonjrr",
@@ -15,7 +15,7 @@
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.3.0",
+        "version": "2.4.1",
         "cells": [
           {
             "position": {
@@ -351,8 +351,8 @@
                 "text": "Web Server"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -448,7 +448,7 @@
               "description": "Servidor Web que foi desenvolvido em VueJS3",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": true,
@@ -457,7 +457,7 @@
                 {
                   "id": "c04d3c8a-5a1b-447f-9818-cd3b727ef28b",
                   "title": "Spoofing (Falsificação de Identidade)",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "type": "Spoofing",
                   "description": "Ameaça: Usuários maliciosos falsificando credenciais para se passar por outros usuários.",
@@ -470,7 +470,7 @@
                 {
                   "id": "a1047b52-84eb-432b-a472-3a5ecc05e146",
                   "title": "Tampering (Manipulação de Dados)",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "type": "Tampering",
                   "description": "Modificação de dados em formulários enviados para o servidor.",
@@ -483,7 +483,7 @@
                 {
                   "id": "3a5c23b6-45d6-4eec-973d-36db7cb8d29c",
                   "title": "Information Disclosure (Divulgação de Informações)",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Information disclosure",
                   "description": "Exposição de informações sensíveis (stack traces) em mensagens de erro exibidas no navegador.",
@@ -496,7 +496,7 @@
                 {
                   "id": "38f0d5b8-58d3-4076-88b2-f42eb36f8388",
                   "title": "Denial of Service (Negação de Serviço)",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Denial of service",
                   "description": "Scripts maliciosos que sobrecarregam o front-end ou o servidor.",
@@ -521,11 +521,11 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 5,
-                "tampering": 3,
+                "spoofing": 6,
+                "tampering": 4,
                 "repudiation": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 2,
+                "informationDisclosure": 2,
+                "denialOfService": 3,
                 "elevationOfPrivilege": 1
               }
             }
@@ -544,8 +544,8 @@
                 "text": "Proxy"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -641,7 +641,7 @@
               "description": "Proxy reverso utilizado a ferramenta NGINX com as configurações de segurança aplicadas",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -650,7 +650,7 @@
                 {
                   "id": "87490898-22b6-484b-9a59-500ef9fb1cf6",
                   "title": "Falsificação de origem nas requisições enviadas ao NGINX.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Spoofing",
                   "description": "Falsificação de origem nas requisições enviadas ao NGINX.",
@@ -663,7 +663,7 @@
                 {
                   "id": "addc1454-5846-4800-9c5f-ffc431a9ac64",
                   "title": "Interceptação e modificação de dados em trânsito.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Tampering",
                   "description": "Interceptação e modificação de dados em trânsito.",
@@ -676,7 +676,7 @@
                 {
                   "id": "762d3121-24fc-4a89-9066-d64172b5dd77",
                   "title": "Exposição de cabeçalhos sensíveis ou informações sobre o servidor.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Information disclosure",
                   "description": "Exposição de cabeçalhos sensíveis ou informações sobre o servidor.",
@@ -702,7 +702,7 @@
                 {
                   "id": "1cf0d99d-c267-4719-9f64-ab6466f86a12",
                   "title": "Configuração incorreta permitindo acesso administrativo por usuários não autorizados.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Elevation of privilege",
                   "description": "Configuração incorreta permitindo acesso administrativo por usuários não autorizados.",
@@ -714,12 +714,12 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
-                "tampering": 2,
+                "spoofing": 4,
+                "tampering": 3,
                 "repudiation": 1,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -737,8 +737,8 @@
                 "text": "Server"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -834,7 +834,7 @@
               "description": "Servidor Back-end desenvolvido em Java utilizando SpringBoot",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -856,7 +856,7 @@
                 {
                   "id": "cfb6eda2-b25a-43f4-83e8-c7810f71a458",
                   "title": "Manipulação de dados de entrada, como parâmetros enviados pelo cliente.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Tampering",
                   "description": "Manipulação de dados de entrada, como parâmetros enviados pelo cliente.",
@@ -869,7 +869,7 @@
                 {
                   "id": "7deb77ef-6e12-4622-8500-7f50dcd9b992",
                   "title": "Negação de ações realizadas no servidor.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Repudiation",
                   "description": "Negação de ações realizadas no servidor.",
@@ -882,7 +882,7 @@
                 {
                   "id": "21bb8d0b-cd54-4d06-905a-63805ef323f7",
                   "title": "Exposição de dados sensíveis, como senhas e logs com informações confidenciais.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Information disclosure",
                   "description": "Exposição de dados sensíveis, como senhas e logs com informações confidenciais.",
@@ -895,7 +895,7 @@
                 {
                   "id": "fe60ae4e-9291-41a1-8547-f6b99529bade",
                   "title": "Sobrecarga do servidor com requisições excessivas.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Denial of service",
                   "description": "Sobrecarga do servidor com requisições excessivas.",
@@ -921,10 +921,10 @@
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "tampering": 1,
-                "repudiation": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1,
+                "tampering": 2,
+                "repudiation": 2,
+                "informationDisclosure": 2,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 1
               }
             }
@@ -1055,7 +1055,7 @@
                 {
                   "id": "6abf1c13-c5d7-42b2-8ca4-91f6414a420a",
                   "title": "Acessos não autorizados diretamente ao banco de dados.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Tampering",
                   "description": "Acessos não autorizados diretamente ao banco de dados.",
@@ -1068,7 +1068,7 @@
                 {
                   "id": "27798a17-bd77-411c-8ce6-acbc12286eed",
                   "title": "Modificação de dados sensíveis por usuários ou processos maliciosos.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Tampering",
                   "description": "Modificação de dados sensíveis por usuários ou processos maliciosos.",
@@ -1107,7 +1107,7 @@
                 {
                   "id": "51dc0a87-cb2e-4e17-9015-1f96cdf8ae63",
                   "title": "Sobrecarga do banco devido a consultas pesadas ou excessivas.",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "TBA",
                   "type": "Denial of service",
                   "description": "Provide a description for this threat",
@@ -1119,11 +1119,18 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 4,
                 "repudiation": 1,
                 "informationDisclosure": 1,
-                "denialOfService": 1
+                "denialOfService": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ]
