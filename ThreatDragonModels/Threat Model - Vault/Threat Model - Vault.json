@@ -847,7 +847,7 @@
                   "severity": "TBA",
                   "type": "Spoofing",
                   "description": "Falsificação de tokens de autenticação para acessar o sistema como outro usuário.",
-                  "mitigation": "- Validar tokens JWT com chave secreta ou par de chaves pública/privada. (DONE).\n- Garantir que os tokens sejam assinados com algoritmos seguros (RS256). (DONE).",
+                  "mitigation": "- Validar tokens JWT com chave secreta ou par de chaves pública/privada. \n- Garantir que os tokens sejam assinados com algoritmos seguros (RS256). ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 13,
@@ -860,7 +860,7 @@
                   "severity": "TBA",
                   "type": "Tampering",
                   "description": "Manipulação de dados de entrada, como parâmetros enviados pelo cliente.",
-                  "mitigation": "- Sanitizar e validar todas as entradas no back-end com Hibernate Validator. (VERIFICAR?)\n- Utilizar consultas parametrizadas para evitar injeção de SQL. (DONE)",
+                  "mitigation": "- Sanitizar e validar todas as entradas no back-end com Hibernate Validator. \n- Utilizar consultas parametrizadas para evitar injeção de SQL.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 14,
@@ -873,7 +873,7 @@
                   "severity": "TBA",
                   "type": "Repudiation",
                   "description": "Negação de ações realizadas no servidor.",
-                  "mitigation": "Registrar logs detalhados no servidor para cada ação crítica, incluindo o usuário, IP, e timestamp. (OPEN);",
+                  "mitigation": "Registrar logs detalhados no servidor para cada ação crítica, incluindo o usuário, IP, e timestamp.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 15,
@@ -886,7 +886,7 @@
                   "severity": "TBA",
                   "type": "Information disclosure",
                   "description": "Exposição de dados sensíveis, como senhas e logs com informações confidenciais.",
-                  "mitigation": "- Armazenar senhas utilizando bcrypt com salt. (DONE)\n- Configurar logs para evitar o registro de dados sensíveis. (OPEN)",
+                  "mitigation": "- Armazenar senhas utilizando bcrypt com salt. \n- Configurar logs para evitar o registro de dados sensíveis. ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 16,
@@ -899,7 +899,7 @@
                   "severity": "TBA",
                   "type": "Denial of service",
                   "description": "Sobrecarga do servidor com requisições excessivas.",
-                  "mitigation": "- Configurar pool de conexões limitadas no Spring para gerenciar recursos do banco de dados. (OPEN)\n- Implementar rate limiting e proteção contra DoS no servidor. (DONE)",
+                  "mitigation": "- Configurar pool de conexões limitadas no Spring para gerenciar recursos do banco de dados.\n- Implementar rate limiting e proteção contra DoS no servidor. ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 17,
@@ -912,7 +912,7 @@
                   "severity": "TBA",
                   "type": "Elevation of privilege",
                   "description": "Usuários não autorizados executando ações administrativas.",
-                  "mitigation": "- Configurar permissões no Spring Security para validar o papel do usuário em cada endpoint. (DONE)\n- Realizar validação de permissões em operações críticas. (DONE)",
+                  "mitigation": "- Configurar permissões no Spring Security para validar o papel do usuário em cada endpoint.\n- Realizar validação de permissões em operações críticas. ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 18,
@@ -920,12 +920,12 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 2,
-                "repudiation": 2,
-                "informationDisclosure": 2,
-                "denialOfService": 2,
-                "elevationOfPrivilege": 1
+                "spoofing": 2,
+                "tampering": 3,
+                "repudiation": 3,
+                "informationDisclosure": 3,
+                "denialOfService": 3,
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -1124,13 +1124,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 2
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
